@@ -13,6 +13,10 @@ mongoose.connection.on('connected', () => {
   console.log('Connected to MongoDB');
 });
 
+app.get('/loaderio-be045088c70a8071c89717bb8307d1a8', (req, res) => {
+  res.send('loaderio-be045088c70a8071c89717bb8307d1a8');
+});
+
 app.get('/qa/questions', (req, res) => {
   const pid = req.query.product_id;
   // console.log('product_id: ', req.query.product_id);
