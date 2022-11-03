@@ -1,3 +1,5 @@
+require('dotenv').config();
+const IP = process.env.IP_ADDRESS;
 const express = require('express');
 const mongoose = require('mongoose');
 const qaDB = require('./non_sql_database/mongoose_database');
@@ -6,7 +8,7 @@ const app = express();
 app.use(express.json());
 
 const port = 4000;
-mongoose.connect('mongodb://localhost/qaDB');
+mongoose.connect(`mongodb://${IP}/qaDB`);
 mongoose.connection.on('connected', () => {
   console.log('Connected to MongoDB');
 });
