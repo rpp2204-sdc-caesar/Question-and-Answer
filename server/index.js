@@ -13,8 +13,8 @@ mongoose.connection.on('connected', () => {
   console.log('Connected to MongoDB');
 });
 
-app.get('/loaderio-be045088c70a8071c89717bb8307d1a8', (req, res) => {
-  res.send('loaderio-be045088c70a8071c89717bb8307d1a8');
+app.get('/loaderio-45ab08560e1586cff8f556504c9cb2c0', (req, res) => {
+  res.send('loaderio-45ab08560e1586cff8f556504c9cb2c0');
 });
 
 app.get('/qa/questions', (req, res) => {
